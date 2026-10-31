@@ -1,0 +1,19 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+test-results/
+playwright-report/
+
+# Private development inputs, kept locally only.
+/references/
+/BUILD_BRIEF.md
+
+# Backups exported from the app.
+japan-stays-*.json
+travel-planner-backup-*.json
+travel-planner-original-*.json

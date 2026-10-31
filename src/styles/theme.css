@@ -1,0 +1,314 @@
+:root {
+  --background: oklch(0.9818 0.0054 95.0986);
+  --foreground: oklch(0.1908 0.002 106.5859);
+  --card: oklch(0.9665 0.0067 97.3521);
+  --card-foreground: oklch(0.1908 0.002 106.5859);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2671 0.0196 98.939);
+  --primary: oklch(0.673253 0.152964 24.390598);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.915438 0.009645 93.575552);
+  --secondary-foreground: oklch(0.4334 0.0177 98.6048);
+  --muted: oklch(0.936929 0.008302 91.485738);
+  --muted-foreground: oklch(0.5341 0.0078 97.4503);
+  --accent: oklch(0.915438 0.009645 93.575552);
+  --accent-foreground: oklch(0.1908 0.002 106.5859);
+  --destructive: oklch(0.449604 0.118256 25.011082);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.914092 0.016201 99.009796);
+  --input: oklch(0.84993 0.01515 98.319134);
+  --ring: oklch(0.719147 0.105938 22.181626);
+  --chart-1: oklch(0.673253 0.152964 24.390598);
+  --chart-2: oklch(0.73006 0.129272 23.024648);
+  --chart-3: oklch(0.812281 0.106014 21.762654);
+  --chart-4: oklch(0.857419 0.06763 34.42869);
+  --chart-5: oklch(0.899475 0.053175 34.021118);
+  --sidebar: oklch(0.9663 0.008 98.8792);
+  --sidebar-foreground: oklch(0.1908 0.002 106.5859);
+  --sidebar-primary: oklch(0.673253 0.152964 24.390598);
+  --sidebar-primary-foreground: oklch(0.9881 0 0);
+  --sidebar-accent: oklch(0.9245 0.0138 92.9892);
+  --sidebar-accent-foreground: oklch(0.1908 0.002 106.5859);
+  --sidebar-border: oklch(0.914092 0.016201 99.009796);
+  --sidebar-ring: oklch(0.84993 0.01515 98.319134);
+  --tone-1: oklch(0.920394 0.0293 264.421309);
+  --tone-1-foreground: oklch(0.43922 0.08072 267.919727);
+  --tone-2: oklch(0.920863 0.034545 350.016329);
+  --tone-2-foreground: oklch(0.450031 0.100009 355.025246);
+  --tone-3: oklch(0.919284 0.04008 114.874629);
+  --tone-3-foreground: oklch(0.429919 0.069868 118.409497);
+  --tone-4: oklch(0.920502 0.034643 300.295208);
+  --tone-4-foreground: oklch(0.439526 0.099892 299.691131);
+  --tone-5: oklch(0.920509 0.039358 71.017279);
+  --tone-5-foreground: oklch(0.43974 0.080099 70.873576);
+  --tone-6: oklch(0.919386 0.034445 196.567802);
+  --tone-6-foreground: oklch(0.429716 0.070065 200.290858);
+  --font-heading: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, "SFMono-Regular", "Menlo", monospace;
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+  --tracking-heading: 0em;
+  --tracking-body: 0em;
+  --shadow-layers-2xs: 0px 1px 3px 0px oklch(0 0 0 / 0.05);
+  --shadow-layers-xs: 0px 1px 3px 0px oklch(0 0 0 / 0.05);
+  --shadow-layers-sm: 0px 1px 3px 0px oklch(0 0 0 / 0.1), 0px 1px 2px -1px oklch(0 0 0 / 0.1);
+  --shadow-layers-default: 0px 1px 3px 0px oklch(0 0 0 / 0.1), 0px 1px 2px -1px oklch(0 0 0 / 0.1);
+  --shadow-layers-md: 0px 1px 3px 0px oklch(0 0 0 / 0.1), 0px 2px 4px -1px oklch(0 0 0 / 0.1);
+  --shadow-layers-lg: 0px 1px 3px 0px oklch(0 0 0 / 0.1), 0px 4px 6px -1px oklch(0 0 0 / 0.1);
+  --shadow-layers-xl: 0px 1px 3px 0px oklch(0 0 0 / 0.1), 0px 8px 10px -1px oklch(0 0 0 / 0.1);
+  --shadow-layers-2xl: 0px 1px 3px 0px oklch(0 0 0 / 0.25);
+  --radius: 1rem;
+  --radius-scale-sm: 0.75rem;
+  --radius-scale-md: 0.875rem;
+  --radius-scale-lg: 1rem;
+  --radius-scale-xl: 1.25rem;
+  --space-base: 0.25rem;
+  --density: 1;
+  --motion-duration-fast: 150ms;
+  --motion-duration-base: 200ms;
+}
+
+.dark {
+  --background: oklch(0.2679 0.0036 106.6427);
+  --foreground: oklch(0.9576 0.0027 106.4494);
+  --card: oklch(0.2928 0.0018 106.5092);
+  --card-foreground: oklch(0.9576 0.0027 106.4494);
+  --popover: oklch(0.3085 0.0035 106.6039);
+  --popover-foreground: oklch(0.9211 0.004 106.4781);
+  --primary: oklch(0.7 0.145 24.390598);
+  --primary-foreground: oklch(0.1908 0.002 106.5859);
+  --secondary: oklch(0.355 0.0096 93.575552);
+  --secondary-foreground: oklch(0.86 0.0177 98.6048);
+  --muted: oklch(0.322 0.0083 91.485738);
+  --muted-foreground: oklch(0.7713 0.0169 99.0657);
+  --accent: oklch(0.355 0.0096 93.575552);
+  --accent-foreground: oklch(0.9576 0.0027 106.4494);
+  --destructive: oklch(0.6368 0.2078 25.3313);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.3618 0.0101 106.8928);
+  --input: oklch(0.4336 0.0113 100.2195);
+  --ring: oklch(0.64 0.1 22.181626);
+  --chart-1: oklch(0.7 0.145 24.390598);
+  --chart-2: oklch(0.63 0.125 23.024648);
+  --chart-3: oklch(0.56 0.105 21.762654);
+  --chart-4: oklch(0.5 0.075 34.42869);
+  --chart-5: oklch(0.44 0.055 34.021118);
+  --sidebar: oklch(0.2357 0.0024 98.8792);
+  --sidebar-foreground: oklch(0.9576 0.0027 106.4494);
+  --sidebar-primary: oklch(0.7 0.145 24.390598);
+  --sidebar-primary-foreground: oklch(0.1908 0.002 106.5859);
+  --sidebar-accent: oklch(0.31 0.0138 92.9892);
+  --sidebar-accent-foreground: oklch(0.9576 0.0027 106.4494);
+  --sidebar-border: oklch(0.3618 0.0101 106.8928);
+  --sidebar-ring: oklch(0.4336 0.0113 100.2195);
+  --tone-1: oklch(0.28 0.0293 264.421309);
+  --tone-1-foreground: oklch(0.84 0.078 267.919727);
+  --tone-2: oklch(0.28 0.034545 350.016329);
+  --tone-2-foreground: oklch(0.84 0.08 355.025246);
+  --tone-3: oklch(0.28 0.04008 114.874629);
+  --tone-3-foreground: oklch(0.84 0.069868 118.409497);
+  --tone-4: oklch(0.28 0.034643 300.295208);
+  --tone-4-foreground: oklch(0.84 0.08 299.691131);
+  --tone-5: oklch(0.28 0.039358 71.017279);
+  --tone-5-foreground: oklch(0.84 0.08 70.873576);
+  --tone-6: oklch(0.28 0.034445 196.567802);
+  --tone-6-foreground: oklch(0.84 0.070065 200.290858);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-tone-1: var(--tone-1);
+  --color-tone-1-foreground: var(--tone-1-foreground);
+  --color-tone-2: var(--tone-2);
+  --color-tone-2-foreground: var(--tone-2-foreground);
+  --color-tone-3: var(--tone-3);
+  --color-tone-3-foreground: var(--tone-3-foreground);
+  --color-tone-4: var(--tone-4);
+  --color-tone-4-foreground: var(--tone-4-foreground);
+  --color-tone-5: var(--tone-5);
+  --color-tone-5-foreground: var(--tone-5-foreground);
+  --color-tone-6: var(--tone-6);
+  --color-tone-6-foreground: var(--tone-6-foreground);
+  --radius-sm: var(--radius-scale-sm);
+  --radius-md: var(--radius-scale-md);
+  --radius-lg: var(--radius-scale-lg);
+  --radius-xl: var(--radius-scale-xl);
+  --shadow-2xs: var(--shadow-layers-2xs);
+  --shadow-xs: var(--shadow-layers-xs);
+  --shadow-sm: var(--shadow-layers-sm);
+  --shadow: var(--shadow-layers-default);
+  --shadow-md: var(--shadow-layers-md);
+  --shadow-lg: var(--shadow-layers-lg);
+  --shadow-xl: var(--shadow-layers-xl);
+  --shadow-2xl: var(--shadow-layers-2xl);
+  --spacing: calc(var(--space-base) * var(--density));
+  --default-transition-duration: var(--motion-duration-base);
+}
+
+@utility type-heading {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heading);
+  letter-spacing: var(--tracking-heading);
+}
+
+@utility type-body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
+  letter-spacing: var(--tracking-body);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-body);
+    letter-spacing: var(--tracking-body);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration-fast: 0ms;
+    --motion-duration-base: 0ms;
+  }
+}
+
+/* UI effects: tactile, strength 50. */
+@layer components {
+  :root {
+    --ui-tactile-highlight: color-mix(in oklab, var(--background) 45%, transparent);
+    --ui-tactile-shade: color-mix(in oklab, var(--foreground) 5%, transparent);
+    --ui-tactile-edge: color-mix(in oklab, var(--foreground) 3%, transparent);
+    --ui-tactile-recess: color-mix(in oklab, var(--foreground) 7%, transparent);
+    --ui-tactile-press: color-mix(in oklab, var(--foreground) 8%, transparent);
+    --ui-tactile-fill-highlight: color-mix(in oklab, var(--background) 18%, transparent);
+    --ui-tactile-fill-shade: color-mix(in oklab, var(--foreground) 12%, transparent);
+    --ui-tactile-wash-top: color-mix(in oklab, var(--background) 30%, transparent);
+    --ui-tactile-wash-bottom: color-mix(in oklab, var(--foreground) 2.5%, transparent);
+    --ui-tactile-fill-lift: color-mix(in oklab, var(--background) 2.5%, transparent);
+    --ui-tactile-fill-sink: color-mix(in oklab, var(--foreground) 4.5%, transparent);
+  }
+  .dark {
+    --ui-tactile-highlight: color-mix(in oklab, var(--foreground) 7%, transparent);
+    --ui-tactile-shade: color-mix(in oklab, var(--background) 22.5%, transparent);
+    --ui-tactile-edge: color-mix(in oklab, var(--background) 17.5%, transparent);
+    --ui-tactile-recess: color-mix(in oklab, var(--background) 25%, transparent);
+    --ui-tactile-press: color-mix(in oklab, var(--background) 30%, transparent);
+    --ui-tactile-fill-highlight: color-mix(in oklab, var(--foreground) 12%, transparent);
+    --ui-tactile-fill-shade: color-mix(in oklab, var(--background) 25%, transparent);
+    --ui-tactile-wash-top: color-mix(in oklab, var(--foreground) 3.5%, transparent);
+    --ui-tactile-wash-bottom: color-mix(in oklab, var(--background) 10%, transparent);
+    --ui-tactile-fill-lift: color-mix(in oklab, var(--foreground) 8.5%, transparent);
+    --ui-tactile-fill-sink: color-mix(in oklab, var(--background) 1.5%, transparent);
+  }
+  :root, .dark {
+    --ui-tactile-raised: inset 0 1px 0 0 var(--ui-tactile-highlight), inset 0 -1px 0 0 var(--ui-tactile-shade);
+    --ui-tactile-filled: inset 0 1px 0 0 var(--ui-tactile-fill-highlight), inset 0 -1px 0 0 var(--ui-tactile-fill-shade);
+    --ui-tactile-recessed: inset 0 1px 2px 0 var(--ui-tactile-recess);
+    --ui-tactile-pressed: inset 0 1px 2px 0 var(--ui-tactile-press);
+    --ui-tactile-hover-border: color-mix(in oklab, var(--border), var(--foreground) 15%);
+    --ui-tactile-hover-input: color-mix(in oklab, var(--input), var(--foreground) 15%);
+    --ui-tactile-hover-primary: color-mix(in oklab, var(--primary), var(--foreground) 10%);
+    --ui-tactile-track-edge: color-mix(in oklab, var(--border) 80%, transparent);
+    --ui-tactile-elevation: var(--shadow-layers-xs);
+  }
+  :where([data-variant="secondary"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"])) {
+    background-image: linear-gradient(to bottom, var(--ui-tactile-wash-top), var(--ui-tactile-wash-bottom));
+    --tw-inset-shadow: var(--ui-tactile-raised), 0 0 0 1px var(--ui-tactile-edge);
+    --tw-shadow: var(--ui-tactile-elevation);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow, 0 0 #0000);
+  }
+  :where(:is([data-variant="outline"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"]:is([data-slot="toggle"], [data-slot="toggle-group-item"]))) {
+    --tw-inset-shadow: var(--ui-tactile-raised);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow, 0 0 #0000);
+  }
+  :where([data-variant="default"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"])) {
+    background-image: linear-gradient(to bottom, var(--ui-tactile-fill-lift), transparent 50%, var(--ui-tactile-fill-sink));
+    --tw-inset-shadow: var(--ui-tactile-filled);
+    --tw-shadow: var(--ui-tactile-elevation);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow, 0 0 #0000);
+  }
+  :where(:is(:is([data-slot="input"], [data-slot="textarea"], [data-slot="select-trigger"], [data-slot="native-select"]):not(:is([data-slot$="input-group"], :has(> [data-slot="input-group-control"])) *), :is([data-slot$="input-group"], :has(> [data-slot="input-group-control"])), [data-slot="tabs-list"]:not([data-variant="line"]), [data-slot="checkbox"], [data-slot="radio-group-item"], [data-slot="switch"])) {
+    --tw-inset-shadow: var(--ui-tactile-recessed);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow, 0 0 #0000);
+  }
+  :where([data-slot="tabs-list"]:not([data-variant="line"])) {
+    --tw-inset-ring-shadow: inset 0 0 0 1px var(--tw-inset-ring-color, currentcolor);
+    --tw-inset-ring-color: var(--ui-tactile-track-edge);
+  }
+  :where([data-slot="switch-thumb"]) {
+    --tw-shadow: var(--ui-tactile-elevation);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow, 0 0 #0000), var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow, 0 0 #0000);
+  }
+  :where(:is([data-variant="default"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="secondary"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"]:is([data-slot="toggle"], [data-slot="toggle-group-item"]), [data-slot="checkbox"], [data-slot="radio-group-item"])) {
+    --tw-duration: var(--motion-duration-fast);
+  }
+  :where(:is([data-variant="outline"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"]:is([data-slot="toggle"], [data-slot="toggle-group-item"]), :is([data-slot="input"], [data-slot="textarea"], [data-slot="select-trigger"], [data-slot="native-select"]):not(:is([data-slot$="input-group"], :has(> [data-slot="input-group-control"])) *), :is([data-slot$="input-group"], :has(> [data-slot="input-group-control"]))):hover) {
+    --border: var(--ui-tactile-hover-border);
+    --input: var(--ui-tactile-hover-input);
+  }
+  :where([data-variant="default"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]):hover) {
+    --primary: var(--ui-tactile-hover-primary);
+  }
+  :where(:is([data-slot="checkbox"], [data-slot="radio-group-item"], [data-slot="switch"]):is([data-state="checked"], [data-state="indeterminate"], [data-checked], [aria-checked="true"], [aria-checked="mixed"])) {
+    --tw-inset-shadow: var(--ui-tactile-filled);
+  }
+  :where(:is([data-variant="default"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"]:is([data-slot="toggle"], [data-slot="toggle-group-item"]), [data-slot="checkbox"], [data-slot="radio-group-item"]):active, :is([data-variant="default"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]))[aria-pressed="true"], [data-variant="outline"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]):is([data-state="open"], [data-popup-open], [aria-expanded="true"]), [data-variant="outline"]:is([data-slot="toggle"], [data-slot="toggle-group-item"]):is([data-state="on"], [data-pressed], [aria-pressed="true"], [aria-checked="true"])) {
+    --tw-inset-shadow: var(--ui-tactile-pressed);
+    --ui-tactile-elevation: 0 0 #0000;
+    --shadow-layers-xs: 0 0 #0000;
+  }
+  :where([data-variant="default"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]):is(:active, [aria-pressed="true"])) {
+    background-image: linear-gradient(to bottom, var(--ui-tactile-fill-sink), transparent 50%, var(--ui-tactile-fill-lift));
+  }
+  :where([data-variant="secondary"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]):is(:active, [aria-pressed="true"])) {
+    background-image: linear-gradient(to bottom, var(--ui-tactile-wash-bottom), var(--ui-tactile-wash-top));
+    --tw-inset-shadow: var(--ui-tactile-pressed), 0 0 0 1px var(--ui-tactile-edge);
+    --ui-tactile-elevation: 0 0 #0000;
+    --shadow-layers-xs: 0 0 #0000;
+  }
+  :where(:is([data-variant="default"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="secondary"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"][data-size]:is([data-slot="button"], [data-slot$="-trigger"], [data-slot$="-close"]), [data-variant="outline"]:is([data-slot="toggle"], [data-slot="toggle-group-item"]), :is([data-slot="input"], [data-slot="textarea"], [data-slot="select-trigger"], [data-slot="native-select"]):not(:is([data-slot$="input-group"], :has(> [data-slot="input-group-control"])) *), :is([data-slot$="input-group"], :has(> [data-slot="input-group-control"])), [data-slot="checkbox"], [data-slot="radio-group-item"], [data-slot="switch"], [data-slot="switch-thumb"], [data-slot="tabs-list"]:not([data-variant="line"])):is(:disabled, [data-disabled], [aria-disabled="true"], :has(> [data-slot="input-group-control"]:disabled), [data-tactile="flat"], [data-tactile="flat"] *)) {
+    box-shadow: none;
+    background-image: none;
+    --tw-inset-shadow: 0 0 #0000;
+    --tw-inset-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-duration: initial;
+    --ui-tactile-elevation: inherit;
+    --shadow-layers-xs: inherit;
+    --border: inherit;
+    --input: inherit;
+    --primary: inherit;
+  }
+}
